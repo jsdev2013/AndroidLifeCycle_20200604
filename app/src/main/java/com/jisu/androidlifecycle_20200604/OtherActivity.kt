@@ -19,4 +19,10 @@ class OtherActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        Log.d("other화면", "onDestroy 실행됨")
+    }
 }
